@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  magicvilla-api:
+    image: magicvilla-api
+    build:
+      context: .
+      dockerfile: MagicVilla_VillaAPI/Dockerfile
+    ports:
+      - 5050:5050
